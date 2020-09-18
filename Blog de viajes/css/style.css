@@ -1,0 +1,234 @@
+                            html {
+                                box-sizing: border-box;
+                                font-size: 62.5%;
+                                /* reset para rems - 62.5 = 10px de 16*/
+                            }
+                            
+                            *,
+                            *:before,
+                            *:after {
+                                box-sizing: inherit;
+                            }
+                            
+                            body {
+                                font-family: Georgia, 'Times New Roman', Times, serif;
+                            }
+                            
+                            img {
+                                max-width: 100%;
+                            }
+                            
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 2;
+                            }
+                            
+                            .boton {
+                                background-color: #00b8e4;
+                                padding: 1rem 4rem;
+                                text-decoration: none;
+                                color: white;
+                                display: inline-block;
+                                font-size: 2rem;
+                                font-weight: 900;
+                                transition: background-color .3s ease-in-out;
+                                margin-bottom: 3rem;
+                                margin-top: 1.5rem;
+                            }
+                            
+                            .boton:hover {
+                                background-color: #036881;
+                            }
+                            
+                            .site-header {
+                                padding: 3rem 0;
+                            }
+                            
+                            .contenedor {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                            }
+                            
+                            .clearfix::after {
+                                content: '';
+                                clear: both;
+                                display: block;
+                            }
+                            /*Navegacion responsive*/
+                            
+                            .barra {
+                                overflow: hidden;
+                            }
+                            
+                            .mobile-menu {
+                                color: white;
+                                text-align: center;
+                                display: block;
+                                font-size: 2rem;
+                                padding: 2rem;
+                            }
+                            
+                            #nav:target {
+                                max-height: 80rem;
+                            }
+                            
+                            .navegacion-principal {
+                                max-height: 0;
+                            }
+                            
+                            @media (min-width: 768px) {
+                                .navegacion-principal {
+                                    max-height: unset;
+                                }
+                                .mobile-menu,
+                                .cerrar {
+                                    display: none!important;
+                                }
+                            }
+                            /*Navegacion*/
+                            
+                            .barra {
+                                background-color: #db008d;
+                                margin-top: 2rem;
+                            }
+                            
+                            .navegacion-principal a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 2.2rem;
+                                display: block;
+                                text-align: center;
+                                padding: 2rem;
+                            }
+                            
+                            .navegacion-principal a:hover {
+                                background-color: #00b8e4;
+                            }
+                            
+                            @media (min-width:768px) {
+                                .navegacion-principal a {
+                                    display: inline-block;
+                                }
+                                .navegacion-principal a:hover {
+                                    background-color: #00b8e4;
+                                }
+                            }
+                            /*Contenedores Principales*/
+                            
+                            .contenido-principal {
+                                margin-top: 2rem;
+                            }
+                            
+                            .contenido-principal,
+                            .sidebar {
+                                padding: 3rem;
+                            }
+                            
+                            @media (min-width: 768px) {
+                                .contenido-principal {
+                                    width: 70%;
+                                    float: left;
+                                    padding: 0 6rem 0 0;
+                                }
+                                .sidebar {
+                                    width: 30%;
+                                    float: right;
+                                    padding: 0;
+                                    margin-top: 2rem;
+                                }
+                            }
+                            /*Entrada de Blog*/
+                            
+                            h2 {
+                                color: #00b8e4;
+                                margin-bottom: 2rem;
+                                font-size: 2.8rem;
+                            }
+                            
+                            .entrada {
+                                margin-bottom: 6rem;
+                            }
+                            
+                            .entrada:last-of-type {
+                                margin-bottom: 0;
+                            }
+                            
+                            .entrada img {
+                                display: block;
+                            }
+                            
+                            @media (min-width: 480px) {
+                                .entrada img {
+                                    max-width: 35rem;
+                                    float: left;
+                                    margin: 0 2rem 0 0;
+                                }
+                            }
+                            
+                            .entrada p {
+                                text-align: justify;
+                            }
+                            /*Sidebar*/
+                            
+                            .sidebar ul {
+                                list-style: none;
+                                padding: 0;
+                            }
+                            
+                            .sidebar ul li {
+                                padding: 1rem;
+                                font-size: 2rem;
+                                text-decoration: none;
+                                color: #00b8e4;
+                            }
+                            
+                            .sidebar ul li:hover {
+                                background-color: #00b8e4;
+                            }
+                            
+                            .sidebar ul li:hover {
+                                color: black;
+                            }
+                            /*footer-sitio*/
+                            
+                            .footer-sitio {
+                                background-color: #db008d;
+                                padding-top: 2rem;
+                                margin-top: 2rem;
+                                color: white;
+                                text-align: center;
+                            }
+                            
+                            .footer-sitio h2 {
+                                color: white;
+                            }
+                            
+                            .footer-sitio a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 2rem;
+                                margin-right: 2rem;
+                            }
+                            
+                            .footer-sitio a:last-of-type {
+                                margin-right: 0;
+                            }
+                            
+                            @media (min-width: 768px) {
+                                .footer-sitio .nosotros {
+                                    float: left;
+                                    width: 30%;
+                                    text-align: right;
+                                }
+                                .footer-sitio .menu {
+                                    float: right;
+                                    width: 50%;
+                                    text-align: right;
+                                }
+                            }
+                            
+                            .copyright {
+                                background-color: #8b0f60b7;
+                                padding: 1rem 0;
+                                margin: 3rem 0 0 0;
+                            }
